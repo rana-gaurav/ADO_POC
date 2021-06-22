@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="375dp"
+        android:layout_height="375dp">
+
+        <FrameLayout
+            android:layout_width="375dp"
+            android:layout_height="375dp">
+
+            <com.mikhaellopez.circleview.CircleView
+                android:id="@+id/circleView3"
+                android:layout_width="375dp"
+                android:layout_height="375dp"
+                app:cv_border="true"
+                app:cv_border_width="@dimen/radius_spiral" />
+
+            <com.mikhaellopez.circleview.CircleView
+                android:id="@+id/circleView2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:cv_border="true"
+                android:layout_gravity="center"
+                app:cv_border_width="@dimen/radius_spiral" />
+
+            <com.mikhaellopez.circleview.CircleView
+                android:id="@+id/circleView1"
+                android:layout_width="225dp"
+                android:layout_height="225dp"
+                app:cv_border="true"
+                android:layout_gravity="center"
+                app:cv_border_width="@dimen/radius_spiral" />
+
+            <ImageView
+                android:id="@+id/centerImage"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:src="@drawable/device"
+                android:visibility="visible" />
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

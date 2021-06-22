@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/main"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        tools:context=".PulseAnimation">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+
+            <com.mikhaellopez.circleview.CircleView
+                android:id="@+id/circleView3"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:cv_border="true"
+                app:cv_border_width="8dp" />
+
+            <com.mikhaellopez.circleview.CircleView
+                android:id="@+id/circleView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:cv_border="true"
+                android:layout_gravity="center"
+                app:cv_border_width="8dp" />
+
+            <com.mikhaellopez.circleview.CircleView
+                android:id="@+id/circleView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cv_border="true"
+                android:layout_gravity="center"
+                app:cv_border_width="8dp" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/centerImage"
+            android:layout_width="20dp"
+            android:visibility="visible"
+            android:layout_height="100dp"
+            android:src="@drawable/ado1" />
+
+
+        <ImageView
+            android:id="@+id/ado1"
+            android:layout_width="100dp"
+            android:visibility="visible"
+            android:layout_height="100dp"
+            android:src="@drawable/ado1" />
+
+
+        <ImageView
+            android:id="@+id/ado2"
+            android:layout_width="100dp"
+            android:visibility="visible"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ado1" />
+
+    </FrameLayout>
+
+</LinearLayout>
